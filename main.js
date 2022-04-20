@@ -8,3 +8,13 @@ $(".slider-one")
 	slidesToScroll: 1,
 	autoplaySpeed: 3000
 });
+
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('https://sid500.github.io/Ecoomerce_pwa/serviceworker.js')
+  .then((registration) => {
+  console.log("service worker registered")
+  })
+  .catch((err) => {
+  console.log("sw registraration "+ err)
+  });
+  } 
