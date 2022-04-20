@@ -58,7 +58,7 @@ primaryKey: 1
 actions: [
 {action: 'explore', title: 'Explore this new world',
 icon: 'shirt.jpg'},
-{action: 'close', title: 'I don\'t want any of this',
+{action: 'close', title: 'I don't want any of this',
 icon: 'watch.jpg'},
 ]
 };
@@ -68,5 +68,5 @@ self.registration.showNotification('Push Notification', options)
 });
 
 self.addEventListener('sync', function(event) {
-	console.log("sync event", event);
+    console.log("sync event", event);
 });
