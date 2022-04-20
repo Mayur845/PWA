@@ -11,6 +11,18 @@
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 <script type="text/javascript" src="jquery.store.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker
+          .register("https://neelgupta8720.github.io/PWA/serviceworker.js%22)
+          .then((registration) => {
+            console.log("service worker registered");
+          })
+          .catch((err) => {
+            console.log("sw registraration " + err);
+          });
+      }
+    </script>
 </head>
 
 <body>
